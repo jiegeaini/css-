@@ -1,0 +1,91 @@
+
+
+/* 最外围的div属性*/
+
+.wrap {
+	width: 100%;
+	height: 1000px;
+	padding-top: 100px;
+	/* 设置内边距上部的距离*/
+	background: url('../img/bg.jpg') no-repeat;
+	/*设置最外围的div背景图片,url里面是图片的地址,no-repeat是此图片做背景时不平铺,就是图片不会重复*/
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+
+/*内容div的属性*/
+
+.content {
+	width: 1000px;
+	height: 800px;
+	background-color: white;
+	margin: 0 auto;
+	/*设置这个div在父元素内居中,意思是它将在最外围这个div里居中.*/
+	padding-top: 30px;
+	/* 设置内边距上部的距离*/
+}
+
+
+/* 表单div*/
+
+.neirong {
+	width: 708px;
+	height: 100%;
+	margin: 0 auto;
+	/*设置这个div在父元素内居中,意思是它将在内容div这个div里居中.*/
+}
+
+
+/* 标题div*/
+
+.titles {
+	/* 设置上下边框的粗细以及颜色*/
+	border-top: 2px solid black;
+	border-bottom: 1px solid gray;
+}
+
+
+/* 提交按钮的属性*/
+
+#input-style-button {
+	width: 120px;
+	border-radius: 10px;
+	/*css3的border属性，意思是设置按钮的圆角，值越高，圆角就越大*/
+	height: 45px;
+	background-color: salmon;
+	outline: none;
+	/*当元素获得焦点的时候，焦点框为0.*/
+	border-style: solid;
+	border-color: white;
+	/*边框线颜色*/
+	color: white;
+	cursor: pointer;
+	/*鼠标移到上面会变成小手*/
+}
+
+
+/* 下面几个css都是设置相对应的输入框的大小*/
+
+.title {
+	text-align: center;
+}
+
+#email_input {
+	width: 100%;
+	height: 30px
+}
+
+#color_input {
+	width: 20px;
+	height: 20px;
+}
+
+#number_input {
+	width: 708px;
+	height: 30px;
+}
+
+.sub {
+	text-align: center;
+}

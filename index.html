@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>调查卷</title>
+		<!--链接在css文件夹的css文件-->
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<!--最外围的div，包裹着所有-->
+		<div class="wrap">
+			<!--内容div，里面包裹着表单-->
+			<div class="content">
+				<!--包裹表单的表单div-->
+				<div class="neirong">
+					<!--标题div-->
+					<div class="titles">
+						<h1 class="title">报名表</h1>
+					</div>
+					<!--标题div结束-->
+					<!--简介div-->
+					<div class="start-info">
+						<p>您如果愿意回答其他问卷调查，欢迎填写报名表，我们会根据您的信息，为您推送最适合的问卷，同时您回答问卷都有机会获得惊喜礼品！</p>
+					</div>
+					<!--简介div结束-->
+					<!--提交from表单div-->
+					<div class="form-area">
+						<form action="" method="post">
+							<p>1您的性别是？</p>
+							<p><input type="radio" name="gender" />男</p>
+							<p><input type="radio" name="gender" />女</p>
+							<p>2你出生的年份是？</p>
+							<select>
+								<option>--请选择--</option>
+								<option>1990</option>
+								<option>1991</option>
+								<option>1993</option>
+							</select>
+							<!-- type="color"  是HTML5新增的表单类型，-->
+							<p>3 你喜欢的颜色是？</p>
+							<input id="color_input" type="color" />
+							<p>4你的邮箱是？</p>
+							<!-- type="email" 和type="number" 是HTML5新增的表单类型，
+                                主要针对手机弹出不同的软键盘类型，在电脑上没有任何效果和普通输入框一样-->
+							<p><input id="email_input" type="email" /></p>
+							<!-- 手机端弹出英文键盘-->
+							<p>5你的电话是？</p>
+							<p><input id="number_input" type="number" /></p>
+							<!-- 手机端弹出数字键盘-->
+							<p class="sub"> <input id="input-style-button" type="submit" value="提交你的问题" /></p>
+						</form>
+					</div>
+					<!--提交form表单div结束-->
+				</div>
+				<!--表单div结束-->
+			</div>
+			<!--内容div结束-->
+		</div>
+		<!--最外围的div结束-->
+	</body>
+
+</html>
